@@ -1,0 +1,368 @@
+npx create-next-app@latest beautiful-site
+cd beautiful-site
+npm run dev
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white">
+      
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6">
+        <h1 className="text-2xl font-bold tracking-wide">W PRODUCT</h1>
+        <div className="space-x-6 text-sm">
+          <a href="#" className="hover:text-gray-400">Home</a>
+          <a href="#" className="hover:text-gray-400">Shop</a>
+          <a href="#" className="hover:text-gray-400">About</a>
+          <a href="#" className="hover:text-gray-400">Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="flex flex-col items-center justify-center text-center px-6 py-32">
+        <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          Built From <span className="text-yellow-400">Vision</span>
+        </h2>
+        <p className="mt-6 max-w-xl text-gray-400">
+          Premium streetwear inspired by ambition, culture, and identity.
+        </p>
+
+        <div className="mt-10 flex gap-4">
+          <button className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-gray-200 transition">
+            Shop Now
+          </button>
+          <button className="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">
+            Lookbook
+          </button>
+        </div>
+      </section>
+
+      {/* FEATURE SECTION */}
+      <section className="grid md:grid-cols-3 gap-10 px-10 pb-32">
+        <Feature title="Premium Quality" text="Crafted with top-tier fabrics and detail." />
+        <Feature title="Street Culture" text="Designed for the youth, by the youth." />
+        <Feature title="Limited Drops" text="Exclusive releases. No restocks." />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} W PRODUCT. All rights reserved.
+      </footer>
+
+    </main>
+  );
+}
+
+function Feature({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-gray-400">{text}</p>
+    </div>
+  );
+}export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white font-sans">
+
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6">
+        <h1 className="text-xl md:text-2xl font-extrabold tracking-widest">
+          THE WINNING PRODUCT
+        </h1>
+        <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+          <a className="hover:text-yellow-400">Home</a>
+          <a className="hover:text-yellow-400">Shop</a>
+          <a className="hover:text-yellow-400">Lookbook</a>
+          <a className="hover:text-yellow-400">Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="px-6 py-32 text-center">
+        <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          Built To <span className="text-yellow-400">Win</span>
+        </h2>
+
+        <p className="mt-6 max-w-2xl mx-auto text-gray-400 text-lg">
+          A modern South African streetwear brand inspired by hustle,
+          resilience, and victory. From the streets to the world.
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4">
+          <button className="px-10 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
+            Shop Drop
+          </button>
+          <button className="px-10 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">
+            View Lookbook
+          </button>
+        </div>
+      </section>
+
+      {/* STATEMENT */}
+      <section className="px-10 pb-32 text-center">
+        <p className="text-2xl md:text-3xl font-semibold max-w-4xl mx-auto">
+          “Not just clothing — a statement for those who refuse to lose.”
+        </p>
+      </section>
+
+      {/* FEATURES */}
+      <section className="grid md:grid-cols-3 gap-8 px-10 pb-32">
+        <Feature
+          title="South African Roots"
+          text="Inspired by township culture, youth energy, and local excellence."
+        />
+        <Feature
+          title="Premium Streetwear"
+          text="Clean cuts, bold logos, heavyweight quality."
+        />
+        <Feature
+          title="Limited Drops"
+          text="No mass production. Only winners wear this."
+        />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} The Winning Product · South Africa
+      </footer>
+    </main>
+  );
+}
+
+function Feature({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="bg-neutral-900 p-8 rounded-2xl hover:scale-105 transition">
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-gray-400">{text}</p>
+    </div>
+  );
+}
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white font-sans">
+
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6">
+        <h1 className="text-xl md:text-2xl font-extrabold tracking-widest">
+          THE WINNING PRODUCT
+        </h1>
+        <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+          <a className="hover:text-yellow-400">Home</a>
+          <a className="hover:text-yellow-400">Shop</a>
+          <a className="hover:text-yellow-400">Lookbook</a>
+          <a className="hover:text-yellow-400">Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="px-6 py-32 text-center">
+        <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          Built To <span className="text-yellow-400">Win</span>
+        </h2>
+
+        <p className="mt-6 max-w-2xl mx-auto text-gray-400 text-lg">
+          A modern South African streetwear brand inspired by hustle,
+          resilience, and victory. From the streets to the world.
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4">
+          <button className="px-10 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
+            Shop Drop
+          </button>
+          <button className="px-10 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">
+            View Lookbook
+          </button>
+        </div>
+      </section>
+
+      {/* STATEMENT */}
+      <section className="px-10 pb-32 text-center">
+        <p className="text-2xl md:text-3xl font-semibold max-w-4xl mx-auto">
+          “Not just clothing — a statement for those who refuse to lose.”
+        </p>
+      </section>
+
+      {/* FEATURES */}
+      <section className="grid md:grid-cols-3 gap-8 px-10 pb-32">
+        <Feature
+          title="South African Roots"
+          text="Inspired by township culture, youth energy, and local excellence."
+        />
+        <Feature
+          title="Premium Streetwear"
+          text="Clean cuts, bold logos, heavyweight quality."
+        />
+        <Feature
+          title="Limited Drops"
+          text="No mass production. Only winners wear this."
+        />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} The Winning Product · South Africa
+      </footer>
+    </main>
+  );
+}
+
+function Feature({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="bg-neutral-900 p-8 rounded-2xl hover:scale-105 transition">
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-gray-400">{text}</p>
+    </div>
+  )
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white font-sans">
+
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6">
+        <h1 className="text-xl md:text-2xl font-extrabold tracking-widest">
+          THE WINNING PRODUCT
+        </h1>
+        <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+          <a className="hover:text-yellow-400">Home</a>
+          <a className="hover:text-yellow-400">Shop</a>
+          <a className="hover:text-yellow-400">Lookbook</a>
+          <a className="hover:text-yellow-400">Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="px-6 py-32 text-center">
+        <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          Built To <span className="text-yellow-400">Win</span>
+        </h2>
+
+        <p className="mt-6 max-w-2xl mx-auto text-gray-400 text-lg">
+          A modern South African streetwear brand inspired by hustle,
+          resilience, and victory. From the streets to the world.
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4">
+          <button className="px-10 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
+            Shop Drop
+          </button>
+          <button className="px-10 py-3 border border-white rounded-full hover:bg-white hover:text-black transition">
+            View Lookbook
+          </button>
+        </div>
+      </section>
+
+      {/* STATEMENT */}
+      <section className="px-10 pb-32 text-center">
+        <p className="text-2xl md:text-3xl font-semibold max-w-4xl mx-auto">
+          “Not just clothing — a statement for those who refuse to lose.”
+        </p>
+      </section>
+
+      {/* FEATURES */}
+      <section className="grid md:grid-cols-3 gap-8 px-10 pb-32">
+        <Feature
+          title="South African Roots"
+          text="Inspired by township culture, youth energy, and local excellence."
+        />
+        <Feature
+          title="Premium Streetwear"
+          text="Clean cuts, bold logos, heavyweight quality."
+        />
+        <Feature
+          title="Limited Drops"
+          text="No mass production. Only winners wear this."
+        />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} The Winning Product · South Africa
+      </footer>
+    </main>
+  );
+}
+
+function Feature({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="bg-neutral-900 p-8 rounded-2xl hover:scale-105 transition">
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-gray-400">{text}</p>
+    </div>
+  );
+}
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-neutral-100">
+
+      {/* NAV */}
+      <nav className="flex items-center justify-between px-10 py-8">
+        <h1 className="text-sm tracking-[0.4em] font-semibold uppercase">
+          The Winning Product
+        </h1>
+        <div className="hidden md:flex space-x-10 text-xs tracking-widest uppercase text-neutral-400">
+          <a className="hover:text-white">Home</a>
+          <a className="hover:text-white">Collection</a>
+          <a className="hover:text-white">Philosophy</a>
+          <a className="hover:text-white">Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="px-6 py-40 text-center">
+        <h2 className="text-6xl md:text-8xl font-light tracking-tight">
+          Designed<br />
+          <span className="italic">for Winners</span>
+        </h2>
+
+        <p className="mt-8 max-w-xl mx-auto text-neutral-400 text-sm leading-relaxed">
+          A luxury South African streetwear brand crafted for those
+          who move with purpose and never announce their success.
+        </p>
+
+        <div className="mt-14 flex justify-center gap-6">
+          <button className="px-12 py-3 border border-neutral-300 text-xs tracking-widest uppercase hover:bg-white hover:text-black transition">
+            View Collection
+          </button>
+          <button className="px-12 py-3 text-xs tracking-widest uppercase text-neutral-400 hover:text-white transition">
+            Brand Story
+          </button>
+        </div>
+      </section>
+
+      {/* DIVIDER */}
+      <div className="w-full h-px bg-neutral-800" />
+
+      {/* PHILOSOPHY */}
+      <section className="px-10 py-32 max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+        <h3 className="text-3xl font-light">
+          Luxury isn’t loud.<br />It’s earned.
+        </h3>
+        <p className="text-neutral-400 text-sm leading-loose">
+          Rooted in South African culture and elevated through refined
+          design, The Winning Product represents discipline, patience,
+          and silent dominance. Every piece is intentional. Every detail
+          is controlled.
+        </p>
+      </section>
+
+      {/* FEATURES */}
+      <section className="px-10 pb-40 grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <LuxuryFeature title="Refined Craft" text="Heavyweight fabrics. Clean silhouettes." />
+        <LuxuryFeature title="Limited Quantities" text="Exclusivity without compromise." />
+        <LuxuryFeature title="Cultural Authority" text="Designed in South Africa. Respected globally." />
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-12 text-center text-neutral-500 text-xs tracking-widest uppercase">
+        © {new Date().getFullYear()} The Winning Product · South Africa
+      </footer>
+    </main>
+  );
+}
+
+function LuxuryFeature({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="border border-neutral-800 p-10 hover:border-neutral-600 transition">
+      <h4 className="text-sm tracking-widest uppercase mb-4">{title}</h4>
+      <p className="text-neutral-400 text-sm leading-relaxed">{text}</p>
+    </div>
+  );
+}
